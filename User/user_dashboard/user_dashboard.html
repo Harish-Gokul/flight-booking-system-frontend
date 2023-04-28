@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="user_dashboard_style/style.css">
+    <link rel="stylesheet" href="user_dashboard_style/modelPopup.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap');
+        body{font-family: 'Open Sans', sans-serif;}
+    </style>
+
+    <script defer src="user_dashboard_scrptis/dom.js"></script>
+    <script defer src="user_dashboard_scrptis/api.js"></script>
+    <script defer src="user_dashboard_scrptis/scripts.js"></script>
+    <script defer src="user_dashboard_scrptis/helperfunctions.js"></script>
+    <script defer src="user_dashboard_scrptis/htmlManipulation.js"></script>
+
+</head>
+<body>
+    <div class="navCustom">
+        <div>
+            <p style="cursor: pointer;" onclick="window.open('../../index.html','_self')">Flight Booking system</p>
+        </div>
+
+        <div class="searchBarDiv input-group">
+            <input type="text" class="form-control"  placeholder="Enter Flight Name">
+                <div class="input-group-append">
+                     <button class="btn btn-primary">Search</button>
+                </div>
+        </div>
+
+        <div class="filterDiv">
+            <div >
+                <select class="form-control" required>
+                    <option selected disabled>From</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+            </div>
+            <div class="ml-2">
+                <select class="form-control" required>
+                    <option selected disabled>To</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+            </div>
+            <div class="ml-2">
+                <input type="date" class="form-control" required>
+            </div>
+          
+        </div>
+
+        <div>
+            <button class="btn btn-outline-info" id="triggerMyBookingBtn" onclick="myBookingFun()">My Bookings</button>
+        </div>
+
+    </div> 
+
+    <div class="greatings"> 
+        <p id="welcomeGreatings">You haven't Signed In... <a href="../user_login/user_login_index.html">Click here to sign in</a></p>
+    </div>
+
+    <div class="displayFligtsContainer">
+
+        <div class="flight" >
+       
+            <h5 >Booked Tickets - a0,a1,a2</h5>
+            <hr>
+          <div class="flightContent">
+              
+            <div>
+                <h6> From - <span> coimbatore</span></h6>
+                <h6> To - <span> Chennai</span></h6>
+                <h6> Depature Time - <span> 2022-05-11</span></h6>
+            </div>
+    
+            <div>
+                <h6> Price - <span> 500</span></h6>
+                <h6> Flight Number - <span> 500</span></h6>
+                <h6> Flight Name - <span> Indigo</span></h6>
+            </div>
+          </div>
+          <hr>
+          <h5>Total Price 5000</h5>
+
+     
+         
+        </div> 
+
+
+
+  <!-- each Flight div -->
+    <div class="flight" >
+       
+        <h5 > Seats avilable - <span>count</span></h5>
+        <hr>
+      <div class="flightContent">
+          
+        <div>
+            <h6> From - <span> coimbatore</span></h6>
+            <h6> To - <span> Chennai</span></h6>
+            <h6> Depature Time - <span> 2022-05-11</span></h6>
+        </div>
+
+        <div>
+            <h6> Price - <span> 500</span></h6>
+            <h6> Flight Number - <span> 500</span></h6>
+            <h6> Flight Name - <span> Indigo</span></h6>
+        </div>
+      </div>
+      <hr>
+ 
+      <button class="btn btn-success" id="bookTicktsBtn">Book Tickets</button>
+    </div> 
+    <!-- end -->
+
+</div>
+
+
+
+
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content" style="text-align: center;"> 
+      
+      <h5 position-sticky>Select Your Seats </h5>
+      <hr>
+      <div id="seatsContainer">
+        <span class="eachSeat">A40</span>
+        <span class="eachSeatDisabled">A40</span>
+        <span class="eachSeat">A40</span>
+      </div>
+
+       <br>
+      <p>Total Amount - ₹<span id="toalAmountForSelectedSeats">0</span></p>
+      <button class="btn btn-outline-info" onclick="confirmBooking()" >Confirm Booking</button>
+
+
+    </div>
+  
+  </div>
+
+</body>
+</html>

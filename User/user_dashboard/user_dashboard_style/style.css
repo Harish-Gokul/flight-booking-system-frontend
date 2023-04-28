@@ -1,0 +1,81 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+}
+
+.navCustom{
+    height: 5rem;
+    background-color: #2A2F4F;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.searchBarDiv{
+    width: 25%;
+}
+.filterDiv{
+    width: auto;
+    display: flex;
+}
+.greatings{
+    margin: 0.5rem;
+    text-align: center;
+    font-size: 20px;
+}
+
+.displayFligtsContainer{
+    border: 3px solid gray; 
+    border-radius: 5px;
+    margin: 1rem 5rem;
+    padding: 2rem;
+    height: 70vh;
+    overflow: auto;
+    background-color: whitesmoke;
+}
+
+.flight{
+    border: 2px solid gray;
+    border-radius: 5px;
+    background-color: white; 
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+.flightContent{
+    display: flex; 
+     justify-content: space-between;
+    text-align: left;
+}
+
+.seatsContainer{
+   padding: 2.5rem;
+}
+
+.eachSeat{
+    border: 1px solid black;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    display: inline-block;
+    background-color: white;
+}
+
+.eachSeat:hover{
+    background-color: lightseagreen;
+}
+
+.eachSeatDisabled{
+    border: 1px solid black;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    display: inline-block;
+    background-color: lightgray;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="user_login_style/style.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap');
+        body{font-family: 'Open Sans', sans-serif;}
+    </style>
+
+    <script defer src="user_login_scripts/dom.js"></script>
+    <script defer src="user_login_scripts/script.js"></script>
+    <script defer src="user_login_scripts/api.js"></script>
+
+</head>
+<body>
+    <div class="heading">
+        <h2>Flight Booking System</h2>
+        <h5>User Login page</h5>
+    </div>
+    
+    <div class="from_container">
+        <div class="form_heading">
+        <h3 id="displayStatus">Login</h3>
+    </div>
+       <div>
+           <div class="form-group signUpFiled">
+            <label for="nameInput">Name</label>
+            <input type="text" class="form-control" id="nameInput" placeholder="Enter Name">
+          </div>
+
+          <div class="form-group signUpFiled">
+            <label for="phoneNumberInput">Phone Number</label>
+            <input type="number" class="form-control" id="phoneNumberInput" placeholder="Enter Phone Number">
+          </div>
+
+        
+            <div class="form-group ">
+              <label for="emailInput">Email address</label>
+              <input type="email" class="form-control" id="emailInput" placeholder="Enter email">
+            </div>
+
+            <div class="form-group">
+              <label for="passwordInput">Password</label>
+              <input type="password" class="form-control" id="passwordInput" placeholder="Password">
+            </div>
+
+            <button type="button" class="btn btn-primary loginFiled" onclick="processLogin()">Login in</button>
+            <button type="button" class="btn btn-primary signUpFiled" onclick="processCreateAccount()">Sign up</button>
+        </div>
+          <br>
+        <a class="link-primary loginFiled" onclick="viewCreateAccount()"> don't have a account, click here to create account</a>
+        <a class="link-primary signUpFiled" onclick="viewLogin()"> Already having a account, click here to login</a>
+        
+
+
+    </div>
+    
+</body>
+</html>

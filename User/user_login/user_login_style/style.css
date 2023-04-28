@@ -1,0 +1,28 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #FDE2F3;
+}
+
+.heading{
+    padding: 1rem;
+    text-align: center;
+}
+
+.from_container{
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: white;
+    margin: 1% 30% ;
+    padding: 2% 5%;
+}
+.signUpFiled{
+    display: none;
+}
+
+.form_heading{
+    text-align: center;
+}

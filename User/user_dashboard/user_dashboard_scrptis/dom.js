@@ -1,6 +1,10 @@
 let flightsContainer = document.querySelector(".displayFligtsContainer")
 let seatsContainer = document.getElementById("seatsContainer")
 let displayTotalAmountForSelectedSeates = document.getElementById("toalAmountForSelectedSeats") 
+
+let searchBarInput = document.getElementById("searchBarInput")
+
+
 let triggerMyBookingBtn = document.getElementById("triggerMyBookingBtn")
 let welcomeGreatingsDisp  = document.getElementById("welcomeGreatings")
 //model popup

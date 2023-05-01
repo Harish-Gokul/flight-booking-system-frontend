@@ -86,6 +86,17 @@ async function confirmBooking (){
 
 
 }
+searchBarInput.addEventListener("keyup",searchBar)
+
+function searchBar(){
+    let userInput = searchBarInput.value;
+    let flightsInContainer = document.querySelectorAll(".flight")
+    flightsInContainer.forEach(item =>{
+        let isPresent = item.innerText.toLowerCase().includes(userInput)
+        if(!isPresent) item.style.display = "none";
+        else item.style.display = "block";
+    })
+}
 
 function logOutUser(){
     localStorage.removeItem("user")

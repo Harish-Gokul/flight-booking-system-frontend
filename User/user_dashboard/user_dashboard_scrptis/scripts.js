@@ -89,7 +89,7 @@ async function confirmBooking (){
 searchBarInput.addEventListener("keyup",searchBar)
 
 function searchBar(){
-    let userInput = searchBarInput.value;
+    let userInput = searchBarInput.value.toLowerCase();
     let flightsInContainer = document.querySelectorAll(".flight")
     flightsInContainer.forEach(item =>{
         let isPresent = item.innerText.toLowerCase().includes(userInput)

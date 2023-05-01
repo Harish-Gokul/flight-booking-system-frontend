@@ -57,7 +57,8 @@ function buildEachFlightHtml(id,from,to,depature,price,name,number,availableSeat
         toH6.innerText = `To - ${to}`
         leftDiv.appendChild(toH6)
         let depatureDateAndTime = document.createElement("h6")
-        depatureDateAndTime.innerText = `Depature Time - ${Date(depature).toString()}`
+        console.log(depature)
+        depatureDateAndTime.innerText = `Depature Time - ${new Date(depature).toString()}`
         leftDiv.appendChild(depatureDateAndTime)
 
     flightContent.appendChild(leftDiv)

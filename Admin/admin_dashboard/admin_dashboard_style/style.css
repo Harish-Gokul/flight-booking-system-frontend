@@ -1,0 +1,27 @@
+.navCustom{
+    height: 5rem;
+    background-color: #0A2647;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.searchBarDiv{
+     width: auto;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+ 
+}
+
+#searchBarInput{
+    border-radius: 10px;
+    width: 40%;
+}
+
+.userInfoDiv{
+    display: flex;
+    flex-direction: column;
+}
+

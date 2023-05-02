@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin DashBoard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap');
+        body{font-family: 'Open Sans', sans-serif;}
+    </style>
+    <link rel="stylesheet" href="admin_dashboard_style/style.css">
+</head>
+<body>
+    <div class="navCustom">
+        <div>
+            <p style="cursor: pointer;" onclick="window.open('../../index.html','_self')">Flight Booking system</p>
+        </div>
+
+        <div class="searchBarDiv ">
+            <input type="text" class="form-control" id="searchBarInput"  placeholder="Enter Flight Name">
+
+            <div style="margin-left: 10px;">
+              <input class="form-control" type="date">
+              
+            </div>
+            <div >
+                <button class="btn btn-primary">Fliter Flights</button>
+            </div>
+        </div>
+
+        <div class="userInfoDiv">
+           <p>Harish Gokul</p>
+           <button class="btn btn-danger">Log Out</button>
+        </div>
+
+    </div> 
+
+</body>
+</html>

@@ -1,3 +1,12 @@
+addEventListener("DOMContentLoaded",()=>{
+    let admin = localStorage.getItem("admin")
+    if(admin){
+        let adminJson = JSON.parse(admin);
+        alert("Welcome Back "+adminJson.name+" \n redirecting to dashboard");
+        window.open("../admin_dashboard/admin_dashboard.html","_self")
+    }
+})
+
 function viewCreateAccount(){
     displayStatusHeading.innerText = "Create Account"
     signUpDivs.forEach((item)=>{

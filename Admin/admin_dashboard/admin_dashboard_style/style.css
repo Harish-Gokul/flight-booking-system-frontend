@@ -1,3 +1,4 @@
+ 
 .navCustom{
     height: 5rem;
     background-color: #0A2647;
@@ -10,7 +11,7 @@
 .searchBarDiv{
      width: auto;
      display: flex;
-     justify-content: space-evenly;
+     justify-content: space-between;
      align-items: center;
  
 }
@@ -21,7 +22,12 @@
 }
 
 .userInfoDiv{
-    display: flex;
-    flex-direction: column;
+   display: flex;
+   flex-direction: column;
+   padding: 2rem;
 }
 
+.buttonsDiv{
+    text-align: center;
+    padding: 0.5rem;
+}

@@ -20,14 +20,42 @@
 
         <div class="searchBarDiv ">
             <input type="text" class="form-control" id="searchBarInput"  placeholder="Enter Flight Name">
+        </div>
 
-            <div style="margin-left: 10px;">
-              <input class="form-control" type="date">
-              
+        <div class="filtersDiv">
+           <div class="filterItem">
+                <select class="form-control" required>
+                <option selected disabled>From</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
             </div>
-            <div >
+            <div class="filterItem">
+                <select class="form-control" required>
+                    <option selected disabled>To</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+            </div>
+            <div class="filterItem">
+
+                <input class="form-control" type="date">
+            </div>
+            <div class="filterItem">
                 <button class="btn btn-primary">Fliter Flights</button>
             </div>
+
+            <div class="filterItem">
+                <select class="form-control" required>
+                    <option selected disabled>Sort By</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+            </div>
+
         </div>
 
         <div class="userInfoDiv">
@@ -38,8 +66,48 @@
     </div> 
 
     <div class="buttonsDiv">
-        <button class="btn btn-outline-success"> Add Flight</button>
+        <button class="btn btn-success"> Add Flight</button>
     </div>
+
+
+    
+    <div class="displayFligtsContainer">
+
+       
+
+
+
+  <!-- each Flight div -->
+    <div class="flight" >
+       
+        <h5 > Seats avilable - <span>count</span></h5>
+        <hr>
+      <div class="flightContent">
+          
+        <div>
+            <h6> From - <span> coimbatore</span></h6>
+            <h6> To - <span> Chennai</span></h6>
+            <h6> Depature Time - <span> 2022-05-11</span></h6>
+        </div>
+
+        <div>
+            <h6> Price - <span> 500</span></h6>
+            <h6> Flight Number - <span> 500</span></h6>
+            <h6> Flight Name - <span> Indigo</span></h6>
+        </div>
+      </div>
+      <hr>
+ 
+      <button class="btn btn-primary" id="bookTicktsBtn">Edit</button>
+      <button class="btn btn-danger">Remove</button>
+    </div> 
+    <!-- end -->
+
+</div>
+
+
+
+
 
 </body>
 </html>

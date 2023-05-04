@@ -1,7 +1,9 @@
- 
+body{
+    background-color: #393E46;
+}
 .navCustom{
     height: 5rem;
-    background-color: #0A2647;
+    background-color: #222831;
     color: white;
     display: flex;
     flex-direction: row;
@@ -18,7 +20,15 @@
 
 #searchBarInput{
     border-radius: 10px;
-    width: 40%;
+    width: auto;
+}
+
+.filtersDiv{
+    display: flex;
+}
+
+.filterItem{
+    padding: 0.2rem;
 }
 
 .userInfoDiv{
@@ -30,4 +40,33 @@
 .buttonsDiv{
     text-align: center;
     padding: 0.5rem;
+}
+
+
+
+.displayFligtsContainer{
+    border: 3px solid gray; 
+    border-radius: 5px;
+    margin: 1rem 5rem;
+    padding: 2rem;
+    height: 70vh;
+    overflow: auto;
+    background-color: #EEEEEE;
+}
+
+.flight{
+    border: 2px solid gray;
+    border-radius: 5px;
+    background-color: white; 
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+.flightContent{
+    display: flex; 
+     justify-content: space-between;
+    text-align: left;
 }

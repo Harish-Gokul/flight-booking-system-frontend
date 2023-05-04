@@ -26,6 +26,9 @@ function viewLogin(){
         item.style.display = "block"
     })
 }
+passwordInput.addEventListener("keydown",(e)=>{
+    if(e.key == "Enter") processLogin();
+})
 
 function processLogin(){
     let email = emailInput.value;
